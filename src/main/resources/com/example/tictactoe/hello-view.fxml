@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="465.0" prefWidth="403.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tictactoe.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label text="Tic Tac Toe" textFill="BLUE">
+      <font>
+         <Font name="System Bold" size="50.0" />
+      </font></Label>
+    <Label text="Name of first player:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+
+    <TextField fx:id="nameOne" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Label text="Name of second player:" GridPane.columnIndex="0" GridPane.rowIndex="1">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+
+    <TextField fx:id="nameTwo"
+               GridPane.columnIndex="1"
+               GridPane.rowIndex="1"/>
+
+
+    <Label fx:id="startGame" />
+   <Button layoutY="60.0" mnemonicParsing="false" onAction="#onStartGameClick" prefHeight="33.0" prefWidth="107.0" style="-fx-background-color: blue;" text="Start Game" textFill="WHITE" />
+<!--    <stylesheets>-->
+<!--        <URL value="@styles.css" />-->
+<!--    </stylesheets>-->
+</VBox>

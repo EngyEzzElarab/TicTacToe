@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="465.0" prefWidth="403.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tictactoe.gridController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label text="Tic Tac Toe" textFill="BLUE">
+        <font>
+            <Font name="System Bold" size="50.0" />
+        </font></Label>
+   <Label fx:id="turn" style="-fx-background-color: #a1caf1;" text="jhgbv" textAlignment="CENTER" textFill="#030343" textOverrun="CENTER_ELLIPSIS">
+      <font>
+         <Font size="25.0" />
+      </font>
+   </Label>
+   <Label fx:id="score" text="SCORE:0-0" textAlignment="CENTER" textFill="#1f226b">
+      <font>
+         <Font name="System Bold" size="17.0" />
+      </font>
+   </Label>
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Button fx:id="b1" layoutX="135.0" layoutY="20.0" mnemonicParsing="false" onAction="#markOnGUI" prefHeight="80.0" prefWidth="92.0" style="-fx-background-color: DODGERBLUE; -fx-border-color: BLACK;" textFill="WHITE">
+            <font>
+               <Font size="32.0" />
+            </font></Button>
+         <Button fx:id="b2" layoutX="135.0" layoutY="20.0" mnemonicParsing="false" onAction="#markOnGUI" prefHeight="80.0" prefWidth="92.0" style="-fx-background-color: DODGERBLUE; -fx-border-color: BLACK;" textFill="WHITE">
+            <font>
+               <Font size="32.0" />
+            </font></Button>
+         <Button fx:id="b3" layoutX="89.0" layoutY="20.0" mnemonicParsing="false" onAction="#markOnGUI" prefHeight="80.0" prefWidth="92.0" style="-fx-background-color: DODGERBLUE; -fx-border-color: BLACK;" textFill="WHITE">
+            <font>
+               <Font size="30.0" />
+            </font></Button>
+      </children>
+   </HBox>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+        <children>
+            <Button fx:id="b4" layoutX="135.0" layoutY="20.0" mnemonicParsing="false" onAction="#markOnGUI" prefHeight="80.0" prefWidth="92.0" style="-fx-background-color: DODGERBLUE; -fx-border-color: BLACK;" textFill="WHITE">
+            <font>
+               <Font size="32.0" />
+            </font></Button>
+            <Button fx:id="b5" layoutX="135.0" layoutY="20.0" mnemonicParsing="false" onAction="#markOnGUI" prefHeight="80.0" prefWidth="92.0" style="-fx-background-color: DODGERBLUE; -fx-border-color: BLACK;" textFill="WHITE">
+            <font>
+               <Font size="32.0" />
+            </font></Button>
+            <Button fx:id="b6" layoutX="89.0" layoutY="20.0" mnemonicParsing="false" onAction="#markOnGUI" prefHeight="80.0" prefWidth="92.0" style="-fx-background-color: DODGERBLUE; -fx-border-color: BLACK;" textFill="WHITE">
+            <font>
+               <Font size="30.0" />
+            </font></Button>
+        </children>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+        <children>
+            <Button fx:id="b7" layoutX="135.0" layoutY="20.0" mnemonicParsing="false" onAction="#markOnGUI" prefHeight="80.0" prefWidth="92.0" style="-fx-background-color: DODGERBLUE; -fx-border-color: BLACK;" textFill="WHITE">
+            <font>
+               <Font size="32.0" />
+            </font></Button>
+            <Button fx:id="b8" layoutX="135.0" layoutY="20.0" mnemonicParsing="false" onAction="#markOnGUI" prefHeight="80.0" prefWidth="92.0" style="-fx-background-color: DODGERBLUE; -fx-border-color: BLACK;" textFill="WHITE">
+            <font>
+               <Font size="32.0" />
+            </font></Button>
+            <Button fx:id="b9" layoutX="89.0" layoutY="20.0" mnemonicParsing="false" onAction="#markOnGUI" prefHeight="80.0" prefWidth="92.0" style="-fx-background-color: DODGERBLUE; -fx-border-color: BLACK;" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+               <Font size="30.0" />
+            </font></Button>
+        </children>
+    </HBox>
+   <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+      <children>
+         <Button mnemonicParsing="false" onAction="#restart" text="Play Again" textAlignment="CENTER">
+            <font>
+               <Font size="11.0" />
+            </font>
+         </Button>
+         <Button mnemonicParsing="false" onAction="#startNewGame" text="Start New Game">
+            <font>
+               <Font size="11.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+</VBox>
